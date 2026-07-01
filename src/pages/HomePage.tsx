@@ -7,9 +7,9 @@ function HomePage() {
     <main className="mx-auto grid w-full max-w-7xl gap-6 px-6 py-8 lg:grid-cols-[16rem_1fr]">
       <ChapterNav />
 
-      <section id="guide" className="rounded-2xl border border-black bg-emerald-50">
+      <section id="guide" className=" bg-emerald-50">
         <div className="border-b border-black px-6 py-5">
-          <h1 className="text-2xl font-semibold leading-tight tracking-tight text-black md:text-3xl">
+          <h1 className="text-2xl font-semibold leading-tight tracking-tight text-black md:text-4xl">
             Chapters
           </h1>
         </div>

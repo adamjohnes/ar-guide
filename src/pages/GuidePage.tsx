@@ -78,7 +78,7 @@ function GuidePage() {
             <section
               key={subsection.id}
               id={getSubsectionElementId(subsection.id)}
-              className="scroll-mt-8"
+              className="scroll-mt-8 mt-12"
             >
               <h2 className="text-xl font-bold text-black">
                 {subsection.title}
