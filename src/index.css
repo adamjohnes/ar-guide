@@ -1,1 +1,17 @@
 @import "tailwindcss";
+
+@theme {
+  --color-hovertext: #5ecccc;
+  --font-sans: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+}

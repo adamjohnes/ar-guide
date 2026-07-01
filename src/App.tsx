@@ -1,20 +1,23 @@
+import { Route, Routes } from 'react-router';
+import Header from './components/Header';
+import Footer from './components/Footer';
+import HomePage from './pages/HomePage';
+import GuidePage from './pages/GuidePage';
+
 function App() {
   return (
-    <main className="min-h-screen bg-slate-950 text-white flex items-center justify-center">
-      <div className="rounded-xl border border-slate-700 bg-slate-900 p-8 shadow-lg">
-        <h1 className="text-4xl font-bold text-blue-400">
-          Vite + React + TypeScript + Tailwind
-        </h1>
+    <div className="flex min-h-screen flex-col bg-olive-400 text-black">
+      <Header />
 
-        <p className="mt-4 text-slate-300">
-          Tailwind is working.
-        </p>
-
-        <button className="mt-6 rounded-lg bg-blue-500 px-4 py-2 font-semibold hover:bg-blue-600">
-          Test Button
-        </button>
+      <div className="flex-1">
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/guide/:sectionId" element={<GuidePage />} />
+        </Routes>
       </div>
-    </main>
+
+      <Footer />
+    </div>
   );
 }
 
