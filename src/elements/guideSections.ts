@@ -1,102 +1,14 @@
-import { ChapterPageSetup } from "../../data/chapters/page-setup";
 import type { GuideSection } from "./types/GuideSection";
+
+// Chapters
+import { ChapterPageSetup } from "../../data/chapters/page-setup";
+import { ChapterSections } from "../../data/chapters/sections";
+import { ChapterConnections } from "../../data/chapters/connections";
 
 export const guideSections: GuideSection[] = [
   ChapterPageSetup,
-  {
-    id: 'sections',
-    path: '/guide/sections',
-    title: 'Sections',
-    description: 'Organization tools for grouping and controlling related report content.',
-    subsections: [
-      {
-        id: 'containers',
-        title: 'Containers',
-        description: 'Containers group related elements together inside a report.',
-        keyPoints: [
-          'Containers can help keep related elements together.',
-          'Visibility settings on a container affect elements inside it.',
-          'Use containers carefully because they can be harder to troubleshoot.'
-        ],
-        images: [],
-        examples: []
-      },
-      {
-        id: 'visibility',
-        title: 'Visibility and Suppression',
-        description: 'Visibility controls whether elements or groups of elements are rendered.',
-        keyPoints: [
-          'Hidden = False means the element is visible.',
-          'Hidden = True means the element is hidden.',
-          'Visibility expressions can show or hide content based on report data.'
-        ],
-        images: [],
-        examples: [
-          '{IIF(employeeID = 100, False, True)}'
-        ]
-      },
-      {
-        id: 'grouping',
-        title: 'Grouping',
-        description: 'Grouping organizes repeated content around a selected field or expression.',
-        keyPoints: [
-          'Groups can prevent duplicate displays of repeated values.',
-          'Group expressions determine how records are organized.',
-          'Grouping is useful when multiple rows belong to the same parent record.'
-        ],
-        images: [],
-        examples: [
-          'Group on CA_OBJECT_ID'
-        ]
-      }
-    ]
-  },
-    {
-    id: 'connections',
-    path: '/guide/connections',
-    title: 'Connections',
-    description: 'How the web designer connects to data sources and data sets.',
-    subsections: [
-      {
-        id: 'web-environment',
-        title: 'Web Environment Connection',
-        description: 'The web version uses the database associated with the current environment.',
-        keyPoints: [
-          'Manual server connection strings are usually not required in the web version.',
-          'The environment determines the active database connection.',
-          'Confirm the environment before testing report data.'
-        ],
-        images: [],
-        examples: []
-      },
-      {
-        id: 'manual-data-source',
-        title: 'Manual Data Source Setup',
-        description: 'Manual setup uses the Data panel to define connection fields when needed.',
-        keyPoints: [
-          'Use the Data icon on the right side of the designer.',
-          'Add a data source from the Data Sources tab.',
-          'Connection fields include name, provider, server, database, username, and password.'
-        ],
-        images: [],
-        examples: []
-      },
-      {
-        id: 'data-sets',
-        title: 'Data Sets',
-        description: 'Data sets define the SELECT statements and returned fields used by the report.',
-        keyPoints: [
-          'Click the plus icon beside a data source to add a query.',
-          'Enter the SELECT statement in the query field.',
-          'Returned fields appear under the Data Sets tab.'
-        ],
-        images: [],
-        examples: [
-          'SELECT * FROM TABLE_NAME WHERE ID = @parameterName'
-        ]
-      }
-    ]
-  },
+  ChapterSections,
+  ChapterConnections,
   {
     id: 'parameters',
     path: '/guide/parameters',
