@@ -2,7 +2,7 @@ import type { GuideSection } from "./types/GuideSection";
 
 // Chapters
 import { ChapterPageSetup } from "../../data/chapters/page-setup";
-import { ChapterSections } from "../../data/chapters/sections";
+import { ChapterContinuousSections } from "../../data/chapters/continuous-sections";
 import { ChapterConnections } from "../../data/chapters/connections";
 import { ChapterExpressions } from "../../data/chapters/expressions";
 import { ChapterParameters } from "../../data/chapters/parameters";
@@ -14,7 +14,7 @@ import { ChapterTables } from "../../data/chapters/tables";
 
 export const guideSections: GuideSection[] = [
   ChapterPageSetup,
-  ChapterSections,
+  ChapterContinuousSections,
   ChapterConnections,
   ChapterExpressions,
   ChapterParameters,

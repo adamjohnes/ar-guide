@@ -6,7 +6,7 @@ export const ChapterConnections: GuideSection =
     id: 'connections',
     path: '/guide/connections',
     title: 'Connections',
-    description: 'How the web designer connects to data sources and data sets.',
+    description: 'How Active Reports connects to data sources and data sets.',
     subsections: [
       {
         id: 'web-environment',

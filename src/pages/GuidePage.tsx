@@ -44,7 +44,7 @@ function GuidePage() {
 
   if (!section) {
     return (
-      <main className="mx-auto grid w-full max-w-7xl gap-6 px-6 py-8 lg:grid-cols-[16rem_1fr]">
+      <main className="mx-auto grid w-full max-w-7xl gap-6 px-6 py-8 lg:grid-cols-[18rem_minmax(0,1fr)]">
         <ChapterNav />
 
         <div className="rounded-2xl border border-black bg-emerald-100 p-6">
@@ -63,7 +63,7 @@ function GuidePage() {
   const tableOfContentHeadings = tableOfContentSection?.headings ?? [];
 
   return (
-    <main className="mx-auto grid w-full max-w-7xl gap-6 px-6 py-8 lg:grid-cols-[16rem_1fr]">
+    <main className="mx-auto grid w-full max-w-7xl gap-6 px-6 py-8 lg:grid-cols-[18rem_minmax(0,1fr)]">
       <ChapterNav />
 
       <div className="grid">

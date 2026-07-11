@@ -23,19 +23,5 @@ export const ChapterExpressions: GuideSection =
           '{IIF(employeeID = 100, False, True)}'
         ]
       },
-      {
-        id: 'formatted-text',
-        title: 'Formatted Text',
-        description: 'Formatted Text boxes are used when HTML-style content is needed.',
-        keyPoints: [
-          'Use Formatted Text when embedding HTML tags.',
-          'Expressions can be placed inside formatted content.',
-          'This is useful for letters, notices, and paragraph-style report text.'
-        ],
-        images: [],
-        examples: [
-          '<strong>{IIf(TERMS = NULL, "NO DATA", TERMS)}</strong>'
-        ]
-      }
     ]
   }

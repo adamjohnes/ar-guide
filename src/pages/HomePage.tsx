@@ -5,7 +5,7 @@ import { guideSections } from '../elements/guideSections';
 
 function HomePage() {
   return (
-    <main className="mx-auto grid w-full max-w-7xl gap-6 px-6 py-8 lg:grid-cols-[16rem_1fr]">
+    <main className="mx-auto grid w-full max-w-7xl gap-6 px-6 py-8 lg:grid-cols-[18rem_minmax(0,1fr)]">
       <ChapterNav />
 
       <div className="grid gap-6">
