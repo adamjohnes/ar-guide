@@ -1,15 +1,5 @@
 import { guideSections } from './guideSections';
-
-export type TableOfContentHeading = {
-  id: string;
-  title: string;
-};
-
-export type TableOfContentSection = {
-  id: string;
-  sectionId: string;
-  headings: TableOfContentHeading[];
-};
+import type { TableOfContentSection } from './types/TableOfContentSection';
 
 export const tableOfContentSections: TableOfContentSection[] = guideSections.map((section) => ({
   id: `${section.id}-toc`,

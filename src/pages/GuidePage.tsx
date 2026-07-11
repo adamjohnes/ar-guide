@@ -92,24 +92,24 @@ function GuidePage() {
               {section.title}
             </h1>
 
-            <p className="mt-2 max-w-3xl text-black bg-lime-50/70 p-4 font-semibold rounded-lg">
-              {section.description}
-            </p>
+            <p className="mt-2 max-w-3xl text-black bg-lime-50/60 p-4 font-semibold rounded-lg whitespace-pre-line"
+               dangerouslySetInnerHTML={{ __html: section.description}}
+            />
           </section>
 
           {section.subsections.map((subsection) => (
             <section
               key={subsection.id}
               id={getSubsectionElementId(subsection.id)}
-              className="mt-12 scroll-mt-8"
+              className="mt-5 scroll-mt-8"
             >
-              <h2 className="text-2xl font-bold text-black">
+              <h2 className="text-3xl font-bold text-black">
                 {subsection.title}
               </h2>
 
-              <p className="mt-2 max-w-3xl text-black bg-lime-50/70 p-4 font-semibold rounded-lg">
-                {subsection.description}
-              </p>
+              <p className="mt-2 max-w-3xl text-black bg-lime-50/60 p-4 font-semibold rounded-lg whitespace-pre-line"
+                dangerouslySetInnerHTML={{ __html: subsection.description}}
+              />
 
               {subsection.keyPoints.length > 0 && (
                 <div className="mt-6">
@@ -119,9 +119,11 @@ function GuidePage() {
 
                   <ul className="mt-4 space-y-1">
                     {subsection.keyPoints.map((point) => (
-                      <li key={point} className="flex gap-2 text-black bg-lime-50/70 p-4 font-semibold rounded-lg">
+                      <li key={point} className="flex gap-2 text-black bg-lime-50/60 p-4 font-semibold rounded-lg">
                         <span className="mt-2 h-2 w-2 shrink-0 rounded-full bg-emerald-800" />
-                        <span>{point}</span>
+                        <span className='whitespace-pre-line'
+                              dangerouslySetInnerHTML={{ __html: point}}>
+                        </span>
                       </li>
                     ))}
                   </ul>
@@ -131,7 +133,7 @@ function GuidePage() {
               {subsection.images.length > 0 && (
                 <div className="mt-6">
                   <h3 className="text-lg font-bold text-black">
-                    Help Images
+                    Help Image(s)
                   </h3>
 
                   <div className="mt-3 flex flex-col gap-4">
@@ -148,7 +150,7 @@ function GuidePage() {
                           <img
                             src={image.src}
                             alt={image.alt}
-                            className="mx-auto max-h-80 w-full max-w-2xl rounded-lg object-contain"
+                            className="mx-auto h-auto max-h-80 w-auto max-w-full rounded-lg object-contain"
                           />
                         </button>
 
@@ -187,7 +189,14 @@ function GuidePage() {
       </div>
 
       {selectedImage && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 p-6">
+        <div
+          className="fixed inset-0 z-50 flex cursor-zoom-out items-center justify-center bg-black/80 p-6"
+          onClick={(event) => {
+            if (event.target === event.currentTarget) {
+              setSelectedImage(null);
+            }
+          }}
+        >
           <button
             type="button"
             onClick={() => setSelectedImage(null)}
@@ -195,7 +204,8 @@ function GuidePage() {
           >
             Close
           </button>
-          <figure className="max-w-6xl">
+
+          <figure className="max-w-6xl cursor-default">
             <img
               src={selectedImage.src}
               alt={selectedImage.alt}

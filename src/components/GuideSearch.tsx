@@ -51,7 +51,7 @@ function GuideSearch() {
         type="search"
         value={searchTerm}
         onChange={(event) => setSearchTerm(event.target.value)}
-        placeholder="Search by topic..."
+        placeholder="Search by keyword..."
         className="mt-4 w-full rounded-xl border border-black bg-white px-4 py-2 text-sm font-semibold text-black outline-none focus:ring-2 focus:ring-emerald-600"
       />
 
@@ -71,9 +71,10 @@ function GuideSearch() {
                 {result.topicTitle}
               </h3>
 
-              <p className="mt-1 text-sm font-medium text-black/75">
-                {result.description}
-              </p>
+            <p
+              className="mt-1 text-sm font-medium text-black/75"
+              dangerouslySetInnerHTML={{ __html: result.description }}
+            />
             </Link>
           ))}
         </div>
