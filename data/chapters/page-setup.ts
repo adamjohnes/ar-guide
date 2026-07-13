@@ -47,8 +47,8 @@ export const ChapterPageSetup: GuideSection =
         Margins can be adjusted in three ways:
 
         1. Using the rulers along the sides of the page
-        2. Accessing the [margins → sizes] settings in the section-level properties
-        3. Accessing the [margins → style] setting in the section-level properties
+        2. Accessing the <em>[margins → sizes]</em> settings in the section-level properties
+        3. Accessing the <em>[margins → style]</em> setting in the section-level properties
           `,
         keyPoints: [`Notably, margin settings only affect the <strong>section</strong>, not the whole report.`,
           `To visually adjust margins, drag the horizontal ruler left/right and drag the vertical ruler up/down.`,
