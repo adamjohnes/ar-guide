@@ -3,7 +3,7 @@ import type { GuideImage } from "../types/GuideImage"
 export const rulerImage: GuideImage = {
   src: '/images/page-setup/rulers.png',
   alt: 'Display the location of rulers',
-  caption: 'The location of horizontal and vertical rulers.'
+  caption: 'The location of horizontal and vertical rulers'
 }
 
 export const gridAndSnapImage: GuideImage = {

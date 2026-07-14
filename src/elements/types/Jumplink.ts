@@ -1,0 +1,3 @@
+export const marginsLink = `<a href="/guide/page-setup#page-setup-margins" class="font-bold text-emerald-800 underline hover:text-black">Chapter 1: Margins</a>`;
+export const parametersLink = `<a href="/guide/parameters#parameters" class="font-bold text-emerald-800 underline hover:text-black">Chapter 4: Parameters</a>`;
+export const visibilityLink = `<a href="/guide/visibility#visibility-hidden" class="font-bold text-emerald-800 underline hover:text-black">Chapter ?: Visibility</a>`;

@@ -1,22 +1,19 @@
 import type { GuideSection } from "../../src/elements/types/GuideSection";
 
 import { continuousSectionImage } from "../../src/elements/imageExports/continuous-sections";
-
-const marginsLink = `<a href="/guide/page-setup#page-setup-margins" class="font-bold text-emerald-800 underline hover:text-black">Chapter 1: Margins</a>`;
-
-const visibilityLink = `<a href="/guide/visibility#visibility-hidden" class="font-bold text-emerald-800 underline hover:text-black">Chapter ?: Visibility</a>`;
+import { marginsLink, visibilityLink } from "../../src/elements/types/Jumplink";
 
 export const ChapterContinuousSections: GuideSection = {
   id: 'continuous-sections',
   path: '/guide/continuous-sections',
   title: 'Continuous Sections',
-  description: `Continuous sections are can be thought of new page containers, used to group related report content and apply settings to that content as a single unit. They are especially useful when organizing subreports or separating groups of content that require their own layout, visibility, margins, or page-break behavior.
+  description: `<strong>Continuous sections</strong> are can be thought of new page containers, used to group related report content and apply settings to that content as a single unit. They are especially useful when organizing subreports or separating groups of content that require their own layout, visibility, margins, or page-break behavior.
 
   A continuous section can be thought of as a distinct area within the report that can be configured independently from the sections around it. To access the settings for a specific continuous section, click its label in the bottom-left corner of the report window.`,
   subsections: [
     {
       id: 'configurations',
-      title: 'Continuous Section Configurations',
+      title: 'Configurations',
       description: `The <em>[Continuous Section → Name]</em> and <em>[Continuous Section → Label]</em> fields can both visually help identify a continuous section, but they serve slightly different purposes:
 
       • The <em>Label</em> controls the text that is visibly displayed for the continuous section in the bottom-left corner of the report designer.
@@ -31,7 +28,8 @@ export const ChapterContinuousSections: GuideSection = {
       For more information about <em>[Visibility/Suppression → Hidden]</em> settings and expressions, see ${visibilityLink}.`,
       keyPoints: [
         `A continuous section's visibility expression applies to the entire section and takes priority over the visibility settings of its child report elements.`,
-        `Use continuous sections to organize subreports and separate groups of content that need to appear on their own individual pages.`
+        `Use continuous sections to organize subreports and separate groups of content that need to appear on their own individual pages.`,
+        `If the margins between a main report's continuous section and subreport's continuous section are inconsistent, elements will appear scattered all over the page in a print output.`
       ],
       images: [
         continuousSectionImage

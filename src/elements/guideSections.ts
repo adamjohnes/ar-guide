@@ -16,8 +16,8 @@ export const guideSections: GuideSection[] = [
   ChapterPageSetup,
   ChapterContinuousSections,
   ChapterConnections,
-  ChapterExpressions,
   ChapterParameters,
+  ChapterExpressions,
   ChapterTextboxes,
   ChapterTables,
   ChapterSubreports

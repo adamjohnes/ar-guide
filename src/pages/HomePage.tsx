@@ -30,8 +30,9 @@ function HomePage() {
                     {section.title}
                   </h2>
 
-                  <p className="mt-1 text-sm text-black group-hover:text-white">
-                    {section.description}
+                  <p className="mt-1 text-sm text-black group-hover:text-white"
+                     dangerouslySetInnerHTML={{ __html: section.description }}
+                  >
                   </p>
                 </div>
               </Link>
