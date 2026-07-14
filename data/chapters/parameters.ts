@@ -87,7 +87,7 @@ Parameter Values: Ward 1, Ward 2, Ward 3`,
         title: 'Subreport Parameters',
         description: `Subreport parameters work primarily in the same way report parameters do. Subreport parameters are passed through the subreport's report parameters, located: 
         [<em>Subreport → Common → Report Parameters</em>].`,
-        keyPoints: [`Subreport report parameters from the parent report must be written exact to the report parameters inside of the child report. Casing does matter.`, `You may pass data records retrieved from the query or the report parameter as a subreport report parameter argument.`],
+        keyPoints: [`Subreport report parameters from the parent report must be written exact to the report parameters inside of the child report. Casing does matter.`, `It is possible to pass data records retrieved from the query or the report parameter as a subreport report parameter argument.`],
         images: [],
         examples: []
       }
