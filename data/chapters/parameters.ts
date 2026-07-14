@@ -45,7 +45,7 @@ export const ChapterParameters: GuideSection =
         From query is the default option. From query is as it sounds, it pulls data from the query itself meaning that the parameter will be directly comparing with values from the dataset. This will often be the typical approach taken for most reports.
 
         <strong>Non-Queried</strong>
-        Non-Queried can be perceived as a set of pre-determined values that the user who is running the report must match. You can fill out the values by adding <em>Parameter Values</em> to the field in the Non-Queried parameter. These values are paired in a Label → Value relationship, where the label is the abstraction that the user who is running the report sees; whereas the value is the actual value being used in the data comparisons.
+        Non-Queried can be perceived as a set of pre-determined values that the user who is running the report must match. It is possible to fill out the values by adding <em>Parameter Values</em> to the field in the Non-Queried parameter. These values are paired in a Label → Value relationship, where the label is the abstraction that the user who is running the report sees; whereas the value is the actual value being used in the data comparisons.
         
         <strong>As of version: <u>${ currentVersion }</u> non-queried parameter values only use the left column (value) for both the text displayed in the prompt, as well as the value comparison and shown value displayed on a report.</strong>
 
@@ -75,7 +75,7 @@ Parameter Values: Ward 1, Ward 2, Ward 3`,
   The report parameter and query parameter do not have to use the same name, but their relationship must be configured in the data set's parameters section. Using clear and consistent names makes this relationship easier to identify and maintain.`,
         keyPoints: [
           `Report parameters are displayed by wrapping them in curly braces. 
-          The parameter can be dragged from the <em>[Data → Parameter]</em> onto the report page.`,
+          The parameter can be dragged from the [<em>Data → Parameter</em>] onto the report page.`,
           'Do not wrap the query parameter in curly braces.',
           'Use the value contained in the field: <em>Parameter Name</em> - <strong>not</strong> <em>Value</em> - when adding a query parameter.',
         ],
@@ -85,8 +85,9 @@ Parameter Values: Ward 1, Ward 2, Ward 3`,
       {
         id: 'subreport-parameters',
         title: 'Subreport Parameters',
-        description: `Subreport parameters work primarily in the same way report parameters do.`,
-        keyPoints: [],
+        description: `Subreport parameters work primarily in the same way report parameters do. Subreport parameters are passed through the subreport's report parameters, located: 
+        [<em>Subreport → Common → Report Parameters</em>].`,
+        keyPoints: [`Subreport report parameters from the parent report must be written exact to the report parameters inside of the child report. Casing does matter.`, `You may pass data records retrieved from the query or the report parameter as a subreport report parameter argument.`],
         images: [],
         examples: []
       }

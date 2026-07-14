@@ -29,7 +29,7 @@ export const ChapterConnections: GuideSection =
         description: 'The web version uses the database associated with the current environment. The configuration process is fairly straightforward and simple. Ensure the <strong>Test Connection</strong> button is pressed to proceed with the data connection process.',
         keyPoints: [
           'Manual server connection strings are usually not required in the web version.',
-          `Data sources and data sets extend across the entire report, meaning all continuous sections share the same data locations. Thus, it would make no difference if you previewed the report from the first section or the last section.`
+          `Data sources and data sets extend across the entire report, meaning all continuous sections share the same data locations. Thus, it makes no difference when previewing the report from the first section or the last section.`
         ],
         images: [dataSourceLocationImage, dataSourceConfigImage],
         examples: []
