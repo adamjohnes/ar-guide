@@ -6,7 +6,7 @@ function Header() {
       <div className="mx-auto flex w-full max-w-7xl items-center justify-between px-6 py-4">
         <div>
           <Link to="/" className="text-2xl tracking-wide text-white font-bold hover:text-emerald-100">
-            Active Reports Report Designer Guide
+            ActiveReports Designer Guide
           </Link>
           <h1 className="text-sm text-white">
             City of St. Louis
