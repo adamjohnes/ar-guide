@@ -17,9 +17,7 @@ export const ChapterExpressions: GuideSection =
       title: 'Further Explaining Expressions',
       description: `An expression may be as simple as a mathematical calculation or as detailed as a conditional statement involving fields, parameters, and functions. ActiveReports provides functions such as <strong>Sum()</strong>, <strong>Count()</strong>, <strong>IIF()</strong>, and <strong>RowNumber()</strong> to support common calculations and decisions.
 
-      The complete expression must be wrapped in a single pair of curly braces. Do not wrap individual field names, parameters, or portions of the expression in additional curly braces. Text and color values returned by an expression must be enclosed in quotation marks, while numbers, Boolean values, and field references are generally left unquoted.
-
-      The value returned by an expression must also be appropriate for the property being changed. For example, a visibility expression must return <strong>True</strong> or <strong>False</strong>, while a background-color expression must return a valid color value such as <strong>"Black"</strong> or <strong>"LightSlateGray"</strong>.`,
+      The complete expression must be wrapped in a single pair of curly braces. Do not wrap individual field names, parameters, or portions of the expression in additional curly braces. Text and color values returned by an expression must be enclosed in quotation marks, while numbers, Boolean values, and field references are generally left unquoted.`,
       keyPoints: [
         `Wrap the complete expression in one pair of curly braces.`,
         `Use quotation marks around literal text, color names, and other string values.`,
@@ -39,9 +37,7 @@ export const ChapterExpressions: GuideSection =
 
       The <strong>Values</strong> area on the left provides access to constants, parameters, data-set fields, report items, common values, and other information available to the report. These categories can be expanded to locate and insert values into the expression. Using the available entries can help prevent spelling errors and makes it easier to identify the correct field or parameter name.
 
-      The <strong>Functions</strong> area contains the functions supported by ActiveReports. These are organized into categories such as Date & Time, Math, Text, Inspection, Program Flow, Aggregate, Conversion, and Miscellaneous. Expanding a category allows you to review and insert functions appropriate for the expression being created.
-
-      After saving the expression, preview the report to verify its behavior. Most expressions depend on the current data set, table row, group, or some other piece of dynamic data and therefore cannot be fully evaluated on the design surface.`,
+      The <strong>Functions</strong> area contains the functions supported by ActiveReports. These are organized into categories such as Date & Time, Math, Text, Inspection, Program Flow, Aggregate, Conversion, and Miscellaneous. Expanding a category allows you to review and insert functions appropriate for the expression being created.`,
       keyPoints: [
         `Use the Values and Functions lists to locate supported fields, parameters, and functions.`,
         `Start with a small expression and add additional conditions after confirming that the basic expression works.`
