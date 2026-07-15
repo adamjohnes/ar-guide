@@ -1,7 +1,7 @@
 import type { GuideSection } from "../../src/elements/types/GuideSection";
 
 import { continuousSectionImage } from "../../src/elements/imageExports/continuous-sections";
-import { marginsLink, visibilityLink } from "../../src/elements/types/Jumplink";
+import { marginsLink, expressionsLink } from "../../src/elements/types/Jumplink";
 
 export const ChapterContinuousSections: GuideSection = {
   id: 'continuous-sections',
@@ -9,7 +9,7 @@ export const ChapterContinuousSections: GuideSection = {
   title: 'Continuous Sections',
   description: `<strong>Continuous sections</strong> are can be thought of new page containers, used to group related report content and apply settings to that content as a single unit. They are especially useful when organizing subreports or separating groups of content that require their own layout, visibility, margins, or page-break behavior.
 
-  A continuous section exists as a distinct area within the report that can be configured independently from the sections around it. To access the settings for a specific continuous section, click its label in the bottom-left corner of the report window.`,
+  A continuous section exists as a new page which can be configured independently from the sections around it. To access the settings for a specific continuous section, click its label in the bottom-left corner of the report window.`,
   subsections: [
     {
       id: 'configurations',
@@ -35,7 +35,7 @@ export const ChapterContinuousSections: GuideSection = {
 
       Because of this behavior, a continuous section's visibility expression acts as a higher-level rule for its child elements. The visibility settings on the individual elements are only relevant when the continuous section itself is visible.
 
-      For more information about visibility settings and expressions, see ${visibilityLink}.`,
+      For more information about visibility settings and expressions, see ${expressionsLink}.`,
       keyPoints: [
         `A continuous section's visibility expression applies to the entire section and takes priority over the visibility settings of its child report elements.`,
         `Use continuous sections to organize subreports and separate groups of content that need to appear on their own individual pages.`,
