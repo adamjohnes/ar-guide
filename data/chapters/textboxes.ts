@@ -51,9 +51,7 @@ Employee ID: {employeeID}`,
       The <strong>Can Shrink</strong> property allows the textbox to reduce its height when its content does not require all of the space assigned at design time. This can help prevent unnecessary blank space, although it should be used carefully when several report elements depend on a consistent layout.
 
       Text wrapping, padding, horizontal alignment, and vertical alignment also affect the available space. A textbox may appear large enough on the design surface but still clip its content after padding and font sizing are applied.`,
-      keyPoints: [
-        `Test the textbox with realistically long values rather than relying only on the design-time placeholder.`
-      ],
+      keyPoints: [],
       images: [],
       examples: []
     },
