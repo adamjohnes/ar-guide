@@ -1,4 +1,3 @@
-// import { setupImageRibbon } from "../../src/elements/imageExports";
 import type { GuideSection } from "../../src/elements/types/GuideSection";
 
 import { nonQueriedImage, parameterQueryImage } from "../../src/elements/imageExports/parameters";

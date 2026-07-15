@@ -44,7 +44,7 @@ function GuidePage() {
 
   if (!section) {
     return (
-      <main className="mx-auto grid w-full max-w-7xl gap-6 px-6 py-8 lg:grid-cols-[18rem_minmax(0,1fr)]">
+      <main className="mx-auto grid w-full max-w-7xl grid-cols-[minmax(0,1fr)] gap-6 px-4 py-8 sm:px-6 lg:grid-cols-[18rem_minmax(0,1fr)]">
         <ChapterNav />
 
         <div className="rounded-2xl border border-black bg-emerald-100 p-6">
@@ -63,10 +63,10 @@ function GuidePage() {
   const tableOfContentHeadings = tableOfContentSection?.headings ?? [];
 
   return (
-    <main className="mx-auto grid w-full max-w-7xl gap-6 px-6 py-8 lg:grid-cols-[18rem_minmax(0,1fr)]">
+    <main className="mx-auto grid w-full max-w-7xl grid-cols-[minmax(0,1fr)] gap-6 px-4 py-8 sm:px-6 lg:grid-cols-[18rem_minmax(0,1fr)]">
       <ChapterNav />
 
-      <div className="grid">
+      <div className="grid min-w-0">
         <nav className="bg-emerald-50 p-5">
           <h2 className="text-sm font-bold uppercase tracking-[0.18em] text-black">
             Table of Contents
@@ -86,7 +86,7 @@ function GuidePage() {
           </div>
         </nav>
 
-        <div className="grid gap-6 bg-emerald-50 p-5">
+        <div className="grid min-w-0 gap-6 bg-emerald-50 p-5">
           <section>
             <h1 className="text-2xl font-semibold leading-tight tracking-tight text-black md:text-5xl">
               {section.title}
@@ -101,7 +101,7 @@ function GuidePage() {
             <section
               key={subsection.id}
               id={getSubsectionElementId(subsection.id)}
-              className="mt-5 scroll-mt-8"
+              className="mt-5 min-w-0 scroll-mt-8"
             >
               <h2 className="text-3xl font-bold text-black">
                 {subsection.title}
@@ -175,7 +175,7 @@ function GuidePage() {
                     {subsection.examples.map((example) => (
                       <pre
                         key={example}
-                        className="overflow-x-auto rounded-xl border border-black bg-emerald-800 p-4 text-sm text-white"
+                        className="max-w-full overflow-x-auto rounded-xl border border-black bg-emerald-800 p-4 text-sm text-white"
                       >
                         <code>{example}</code>
                       </pre>
