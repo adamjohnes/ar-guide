@@ -1,1 +1,1 @@
-export const currentVersion = `CW v23.12 (19.74.3) - Respond v5.10.0`
+export const currentVersion: string = `CW v23.12 (19.74.3) - Respond v5.10.0`
