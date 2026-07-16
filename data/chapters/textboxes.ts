@@ -7,7 +7,7 @@ export const ChapterTextboxes: GuideSection = {
   id: 'textboxes',
   path: '/guide/textboxes',
   title: 'Textboxes',
-  description: `Textboxes are the primary report elements used to display written information. They can contain static labels, database fields, report parameters, expression results, or a combination of all of this content together.
+  description: `<strong>Textboxes</strong> are the primary report elements used to display written information. They can contain static labels, database fields, report parameters, expression results, or a combination of all of this content together.
 
   In addition to displaying values, textboxes provide formatting and layout settings in the properties tab that control the font, color, alignment, spacing and background. Expressions may also be applied to many of these properties to change how the textbox appears or behaves when the report runs.
 
@@ -16,7 +16,7 @@ export const ChapterTextboxes: GuideSection = {
     {
       id: 'textboxes',
       title: 'Textboxes',
-      description: `<strong>Textboxes</strong> can be added from the report toolbox and placed directly on the report page or inside another report element, such as a table cell.
+      description: `Textboxes can be added from the report toolbox and placed directly on the report page or inside another report element, such as a table cell.
 
       Static text can be entered directly into the textbox. This is useful for report titles, field labels, instructions, and other content that does not change when the report runs.
 

@@ -26,11 +26,11 @@ function HomePage() {
                 className="group grid gap-3 px-6 py-5 transition hover:bg-emerald-600 md:items-center"
               >
                 <div>
-                  <h2 className="text-lg font-bold text-black group-hover:text-white">
+                  <h2 className="text-2xl font-bold text-black group-hover:text-white">
                     {section.title}
                   </h2>
 
-                  <p className="mt-1 text-sm text-black group-hover:text-white"
+                  <p className="mt-1 text-sm line-clamp-2 text-black group-hover:text-white"
                      dangerouslySetInnerHTML={{ __html: section.description }}
                   >
                   </p>
